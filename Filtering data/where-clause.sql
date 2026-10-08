@@ -41,6 +41,7 @@ FROM employees
 WHERE jobtitle = 'Sales Rep' AND lastname = 'Smith';
 
 
+
 -- 2 . Using IN
 SELECT firstname, lastname, jobtitle 
 FROM employees
