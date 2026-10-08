@@ -1,0 +1,31 @@
+-- AND OPERATOR IS A LOGICAL OPERATOR THAT COMBINES TWO OR  MORE EXPRESSIONS AND RETURNS 1, 0 OR NULL
+
+-- WHEN EVALUATING AN EXPRESSSION THAT CONTAINS THE AND OPERATOR, MySQL STOPS EVALUATING THE REMAINING PARTS OF THE EXPRESSION AS SOON AS IT CAN DETERMINE THE RESULT
+
+  -- TRY THIS OUT
+      SELECT 
+    customername, 
+    country, 
+    state
+FROM
+    customers
+WHERE
+    country = 'USA' AND 
+    state = 'CA';
+    
+    
+    -- THIS RETURNS CUSTOMERS WHO ARE LOCATED IN CALIFORNIA (CA), USA
+    
+    SELECT 
+    customername, 
+    country, 
+    state, 
+    creditlimit
+FROM
+    customers
+WHERE
+    country = 'USA' AND 
+    state = 'CA' AND 
+    creditlimit > 100000;
+    
+    -- THIS RETURNS CUSTOMERS WHO ARE IN CALIFORNIA, USA AND HAVE A CREDIT LIMIT GREATER THAN 100K;
